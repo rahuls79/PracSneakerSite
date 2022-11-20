@@ -1,0 +1,79 @@
+
+
+.sneaker-details{
+    display: flex;
+    margin-left: 30px;
+}
+
+
+.sneaker-images{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 50px;
+    width: 70%;
+}
+
+.prev-image img{
+    width: 70%;
+    border-radius: 9px;
+}
+
+
+.image-options img{
+    width: 20%;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.sneaker-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-left: 20px;
+}
+
+.button-values{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.value-select button{
+    color: orange;
+}
+
+.add-value button{
+    margin-left: 10px;
+}
+
+.sneaker-desc p{
+    width: 60%;
+    text-align: justify;
+    margin-top: 15px;
+    font-family: revert;
+    font-weight: 200;
+
+}
+
+span{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.amount{
+    display: flex;
+}
+
+h5{
+    font: menu;
+    font-weight: 700;
+    color: burlywood;
+}
+
+h2{
+    font-family: unset;
+    font-weight: 600;
+}

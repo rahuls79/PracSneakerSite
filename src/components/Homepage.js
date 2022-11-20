@@ -8,7 +8,7 @@ const Homepage = () =>{
         <>
         <div className = "homepage-layout">
             <Header />
-            {/* <SneakerBody /> */}
+            <SneakerBody />
         </div>
         
         </>

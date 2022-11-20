@@ -2,9 +2,10 @@ import "./Header.css";
 import logo from "../images/logo.svg";
 import cart from "../images/icon-cart.svg";
 import avatar from "../images/image-avatar.png";
+import p1 from "../images/image-product-1.jpg";
 
 
-const Header = () =>{
+const Header = (props) =>{
 
     return(
         <>
@@ -18,7 +19,20 @@ const Header = () =>{
                 <button>Contact</button>
             </div>
             <div className = "header-profile">
-                <img src = {cart} width = "40px" padding-right = "50px" className = "image-cart"></img>
+                    <div className="dropdown">
+                        <img src = {cart} width = "40px" padding-right = "50px" className = "image-cart"></img>
+                        <div class="dropdown-content">
+                            <h5>Cart</h5>
+                            <div className="cart-details">
+                                <div className="cart-image">
+                                    <img src = {p1}/>
+                                </div>
+                                <div className="quantity">
+                                    <p>{props.amount}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 <img src = {avatar} width = "43px" padding-left = "25px" className = "image-avatar"></img>
             </div>
         </div>
