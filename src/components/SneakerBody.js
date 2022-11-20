@@ -5,6 +5,8 @@ import p3 from "../images/image-product-3.jpg";
 import p4 from "../images/image-product-4.jpg";
 import cart from "../images/icon-cart.svg";
 import React,{useState} from 'react';
+import Preview from "./Preview";
+import PreviewOption from "./PreviewOption";
 
 
 const SneakerBody = () =>{
@@ -27,24 +29,26 @@ const SneakerBody = () =>{
 
 
 
-   const image1 = (event) =>{
-    event.preventDefault();
-    document.getElementById('preview').src = p1;
-   }
-   function image2(event){
-    event.preventDefault();
-    let img1= document.getElementById("preview");
-    img1.src = p2;
-   }
+//    const image1 = (event) =>{
+//     event.preventDefault();
+//     document.getElementById('preview').src = p1;
+//    }
+//    function image2(event){
+//     event.preventDefault();
+//     let img1= document.getElementById("preview");
+//     img1.src = p2;
+//    }
 
-   const image3 = (event) =>{
-    event.preventDefault();
-    document.getElementById('preview').src = p3;
-   }
-   const image4 = (event) =>{
-    event.preventDefault();
-    document.getElementById('preview').src = p4;
-   }
+//    const image3 = (event) =>{
+//     event.preventDefault();
+//     document.getElementById('preview').src = p3;
+//    }
+//    const image4 = (event) =>{
+//     event.preventDefault();
+//     document.getElementById('preview').src = p4;
+//    }
+   
+   const [prevSrc, setPrevSrc] = useState(p1);
 
     return(
         
@@ -52,13 +56,19 @@ const SneakerBody = () =>{
         <div className = "sneaker-details">
             <div className = "sneaker-images">
                 <div className = "prev-image">
-                    <img src = {p1} id="preview"></img>
+                    {/* <img src = {p1} id="preview"></img> */}
+                    <Preview prevSrc={prevSrc} />
+                    
                 </div>
                 <div className = "image-options">
-                    <img src = {p1} onClick={image1}/>
+                    {/* <img src = {p1} onClick={image1}/>
                     <img src = {p2} onClick={image2}/>
                     <img src = {p3} onClick={image3}/>
-                    <img src = {p4} onClick={image4}/>
+                    <img src = {p4} onClick={image4}/> */}
+                    <PreviewOption imageSrc={p1} setPrevSrc={setPrevSrc} />
+                    <PreviewOption imageSrc={p2} setPrevSrc={setPrevSrc} />
+                    <PreviewOption imageSrc={p3} setPrevSrc={setPrevSrc} />
+                    <PreviewOption imageSrc={p4} setPrevSrc={setPrevSrc} />
                 </div>
             </div>
             <div className = "sneaker-desc">
