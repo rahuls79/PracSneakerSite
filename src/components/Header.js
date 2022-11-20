@@ -18,8 +18,8 @@ const Header = () =>{
                 <button>Contact</button>
             </div>
             <div className = "header-profile">
-                <img src = {cart}></img>
-                <img src = {avatar}></img>
+                <img src = {cart} width = "40px" padding-right = "50px" className = "image-cart"></img>
+                <img src = {avatar} width = "43px" padding-left = "25px" className = "image-avatar"></img>
             </div>
         </div>
         

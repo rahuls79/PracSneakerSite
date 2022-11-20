@@ -1,4 +1,56 @@
 .header-content{
     display: flex;
     justify-content: space-between;
+    border-bottom: ridge;
+    border-color: #c5bfbf54;
+    border-width: thin;
+    padding-bottom: 10px;
+}
+
+.header-categories button{
+    padding-top: 25px;
+    border: 0px;
+    margin-left: 35px;
+    background-color: transparent;
+    color: rgb(106, 106, 106);
+}
+
+.header-categories button:hover{
+    color: rgb(45, 45, 45);
+    border-bottom: 5px;
+    border-style: solid;
+    border-color: orangered;
+    cursor: pointer;
+}
+
+.header-profile{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-cart{
+    width: 25px;
+    height: 25px;
+    padding-top: 13px;
+}
+
+.image-cart:hover{
+    cursor: pointer;
+}
+
+.image-avatar{
+    margin-left: 25px;
+    margin-left: 25px;
+    border: solid;
+    /* border: grey; */
+    border-radius: 50%;
+    border-color: aliceblue;
+}
+
+
+.image-avatar:hover{
+    border: solid;
+    border-radius: 50%;
+    border-color: orangered;
+    cursor: pointer;
 }
