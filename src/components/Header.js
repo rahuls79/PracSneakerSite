@@ -5,18 +5,25 @@ import avatar from "../images/image-avatar.png";
 import p1 from "../images/image-product-1.jpg";
 
 
-const Header = (props) =>{
+const Header = ({cartValue}) =>{
+
+    const viewOptions = () =>{
+        document.getElementsByClassName(".options").style.width= "40px";
+    }
 
     return(
         <>
         <div className = "header-content">
             <div className = "header-categories">
+                <button className="btn-options" onClick={viewOptions}>☰</button>
                 <img src = {logo}></img>
-                <button>Collections</button>
-                <button>Men</button>
-                <button>Women</button>
-                <button>About</button>
-                <button>Contact</button>
+                <div className="options">   
+                    <button>Collections</button>
+                    <button>Men</button>
+                    <button>Women</button>
+                    <button>About</button>
+                    <button>Contact</button>
+                    </div>
             </div>
             <div className = "header-profile">
                     <div className="dropdown">
@@ -28,7 +35,7 @@ const Header = (props) =>{
                                     <img src = {p1}/>
                                 </div>
                                 <div className="quantity">
-                                    <p>{props.amount}</p>
+                                    <p>{cartValue}</p>
                                 </div>
                             </div>
                         </div>

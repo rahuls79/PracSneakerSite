@@ -9,7 +9,7 @@ import Preview from "./Preview";
 import PreviewOption from "./PreviewOption";
 
 
-const SneakerBody = () =>{
+const SneakerBody = ({setCartValue}) =>{
 
     const [initialState,updatedState] = useState(1);
 
@@ -24,6 +24,7 @@ const SneakerBody = () =>{
 
    const addItem = (event) =>{
     const amount = 125 * initialState;
+    setCartValue(amount);
     console.log(amount)
    }
 
@@ -61,10 +62,27 @@ const SneakerBody = () =>{
                     
                 </div>
                 <div className = "image-options">
-                    {/* <img src = {p1} onClick={image1}/>
-                    <img src = {p2} onClick={image2}/>
-                    <img src = {p3} onClick={image3}/>
-                    <img src = {p4} onClick={image4}/> */}
+                <div id="carouselExampleSlidesOnly" className="carousel-slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img className="d-block w-100" src={p1} alt="First slide" />
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src={p2} alt="Second slide" />
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src={p3} alt="Third slide" />
+                        </div>
+                        <div className="carousel-item">
+                            <img className="d-block w-100" src={p4} alt="Fourth slide" />
+                        </div>
+                    </div>
+                </div>
                     <PreviewOption imageSrc={p1} setPrevSrc={setPrevSrc} />
                     <PreviewOption imageSrc={p2} setPrevSrc={setPrevSrc} />
                     <PreviewOption imageSrc={p3} setPrevSrc={setPrevSrc} />

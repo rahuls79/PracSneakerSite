@@ -7,15 +7,24 @@
     padding-bottom: 10px;
 }
 
-.header-categories button{
+.header-categories{
+    display: -webkit-box;
+
+}
+
+.header-categories img{
+    margin-top: 25px;
+}
+
+.options button{
     padding-top: 25px;
     border: 0px;
-    margin-left: 35px;
+    margin-left: 30px;
     background-color: transparent;
     color: rgb(106, 106, 106);
 }
 
-.header-categories button:hover{
+.options button:hover{
     color: rgb(45, 45, 45);
     border-bottom: 5px;
     border-style: solid;
@@ -40,19 +49,19 @@
 
 .image-avatar{
     margin-left: 25px;
+    height: 64px;
+    width: 64px;
     margin-left: 25px;
     border: solid;
     /* border: grey; */
     border-radius: 50%;
     border-color: aliceblue;
+    cursor: pointer;
 }
 
 
 .image-avatar:hover{
-    border: solid;
-    border-radius: 50%;
     border-color: orangered;
-    cursor: pointer;
 }
 
 .cart-image img{
@@ -61,11 +70,15 @@
     padding-bottom :50px;
 }
 
-.cart-details{
+/* .cart-details{
     display: flex;
+} */
+
+.btn-options{
+    display: none;
 }
 
-@media (max-width:500px) and (min-width:300px) {
+@media (max-width:600px) and (min-width:300px) {
     .header-content{
         display: flex;
         width: 100%;
@@ -74,7 +87,49 @@
     .header-profile{
         display: flex;
         justify-content: flex-end;
+        padding-top: 10px;
     }
+
+    .btn-options{
+        display: block;
+        margin-left: 0;
+        padding-top: 25px;
+        border: 0px;
+        background-color: transparent;
+        color: rgb(106, 106, 106);
+    }
+
+    .header-categories {
+        padding-top: 15px;
+        display: flex;
+        height: 50px;
+        width: 90%; }
+
+    .options{
+        visibility: hidden;
+    }
+
+    .header-categories img{
+        width: 50%;
+        height: 20px;
+        margin-top: 25px;
+    }
+
+    .image-avatar{
+        width: 40px;
+        height: 40px;
+        margin-top: 20px;
+    }
+
+    .cart-image img{
+        padding-right: 10px;
+        padding-left: 20px;
+        height: 50px;
+        margin-top: 10px;
+    }
+
+    .header-categories a {font-size: 18px;}
+
 }
 
 .dropbtn {
