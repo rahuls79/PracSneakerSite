@@ -2,9 +2,12 @@
     padding: 2% 10%;
 }
 
-@media (max-width:500px) and (min-width:300px) {
+@media (max-width:600px) and (min-width:300px) {
     .homepage-layout{
         padding:0px;
         margin : 0px;
+        width: 100%;
+        display: block;
     }
+   
 }

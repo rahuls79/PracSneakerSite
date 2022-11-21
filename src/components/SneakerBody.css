@@ -58,6 +58,10 @@
 
 }
 
+.carousel-slide{
+    display: none;
+}
+
 span{
     padding-top: 10px;
     padding-left: 10px;
@@ -77,3 +81,78 @@ h2{
     font-family: unset;
     font-weight: 600;
 }
+
+
+@media (max-width:600px) and (min-width:300px) {
+    .sneaker-details{
+        display: block;
+        margin: 0;
+    }
+    .sneaker-images{
+        width: 100%;
+        margin: 0;
+    }
+    /* .carousel-slide{
+        display: block;
+    } */
+    .image-options img{
+        display: none;
+    }
+    .prev-image img{
+        width: 100%;
+        margin-top: 30px;
+        border-radius: 0;
+    }
+
+    .sneaker-desc{
+        margin-top:20px;
+        margin-right: 20px;
+    }
+
+    h5{
+        font-size: x-large;
+    }
+
+    .sneaker-desc h2{
+        font-size: xxx-large;
+        font-weight: 900;
+        font-family: fangsong;
+        text-align: left;
+    }
+
+    .sneaker-desc p{
+        width: 100%;
+        padding-right: 20px;
+        font-family: auto;
+        font-size: x-large;
+        font-weight: normal;
+        color: slategrey;
+    }
+
+    .button-values{
+        margin-top: 5px;
+        display: block;
+        width: 100%;
+    }
+
+    .value-select{
+        display: flex;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+
+    .value-select button{
+        width: 33%;
+    }
+
+    .add-value button{
+        width: 100%;
+        display: block;
+        margin-left: 0;
+    }
+
+
+    }
+
+
+
